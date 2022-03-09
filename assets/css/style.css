@@ -1,0 +1,442 @@
+@import url(//db.onlinewebfonts.com/c/23c8ec0d7b298e340b59bd32a7e661f3?family=SF+Compact+Display);
+@import url(//db.onlinewebfonts.com/c/34c8d46dfc9b1f9eb1baa2256874b885?family=SF+Compact+Display+Bold);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "SF Compact Display";
+}
+
+.container {
+	width: 1366px;
+	margin: 0 auto;
+	padding: 0 100px;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 99px;
+}
+
+.bg-nav {
+	margin: 0 auto;
+	width: 100%;
+	padding: 0 178px;
+	height: 99px;
+	box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li {
+	list-style: none;
+}
+
+.active {
+	font-weight: 600;
+}
+
+li a {
+	text-decoration: none;
+	color: #3c3b3b;
+	font-size: 16px;
+	margin-left: 45px;
+}
+
+li button {
+	margin-left: 25px;
+}
+
+.btn-primary {
+	border: none;
+	color: #ffff;
+	background-color: #458a6d;
+	box-shadow: 0px 4px 10px;
+	border-radius: 5px;
+	padding: 8px 32px;
+}
+
+.btn-secondary {
+	border: none;
+	color: #3c3b3b;
+	background-color: transparent;
+	padding: 8px 32px;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.text-heading h1 {
+	font-size: 40px;
+	line-height: 131%;
+	width: 561px;
+	margin: 16px 0;
+	font-family: "SF Compact Display Bold";
+}
+
+.description {
+	display: flex;
+	align-items: center;
+	margin: 16px 0;
+}
+
+.description img {
+	margin-right: 18px;
+}
+
+.img-heading {
+	margin: 32px 0;
+	margin-left: 36px;
+	display: grid;
+	grid-template-areas: "img1 img2""img1 img3";
+	column-gap: 32px;
+	row-gap: 32px;
+}
+
+.info button {
+	margin-top: 40px;
+}
+
+.img1 {
+	grid-area: img1;
+}
+
+.img2 {
+	grid-area: img2;
+}
+
+.img3 {
+	grid-area: img3;
+}
+
+.facilities {
+	margin: 144px 0;
+}
+
+.facilities-head h2 {
+	text-align: center;
+	font-size: 32px;
+	font-family: "SF Compact Display Bold";
+}
+
+.facilities-head p {
+	text-align: center;
+	font-size: 16px;
+	line-height: 24px;
+	margin: 16px auto;
+	width: 500px;
+}
+
+.row-card {
+	margin-top: 64px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	width: 100%;
+	column-gap: 64px;
+}
+
+.card {
+	background: #ffffff;
+	box-shadow: 0px 10px 30px rgba(204, 204, 204, 0.44);
+	border-radius: 18px;
+	padding: 32px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	align-items: center;
+}
+
+.card p {
+	margin-top: 44px;
+	color: #458a6d;
+	font-family: "SF Compact Display Bold";
+}
+
+.lingkaran {
+	width: 18px;
+	height: 18px;
+	background-color: #458a6d;
+	border-radius: 50%;
+	margin-bottom: 43px;
+	margin-left: 160px;
+}
+
+.lingkaran1 {
+	width: 18px;
+	height: 18px;
+	background-color: transparent;
+	border-radius: 50%;
+	margin-bottom: 43px;
+	margin-left: 160px;
+}
+
+span.lingkaran-real {
+	width: 18px;
+	height: 18px;
+	background-color: #458a6d;
+	border-radius: 50%;
+	margin-top: 77px;
+}
+
+.keterangan {
+	margin-top: 44px;
+	display: flex;
+	align-items: center;
+}
+
+.lingkaran-real {
+	width: 18px;
+	height: 18px;
+	background-color: #458a6d;
+	border-radius: 50%;
+	margin-right: 9px;
+}
+
+section.paket {
+	margin: 32px 0;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+section.paket h2 {
+	font-family: "SF Compact Display Bold";
+	font-size: 32px;
+	margin-bottom: 16px;
+}
+
+.switcher {
+	padding: 13px 21px;
+	background-color: #458a6d;
+	border-radius: 5px;
+}
+
+.desc {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.desc p {
+	line-height: 24px;
+	width: 504px;
+	margin-right: 200px;
+}
+
+button.btn-on-tab {
+	color: #3c3b3b;
+	background-color: #ffffff;
+	border: none;
+	padding: 10px 35px;
+	border-radius: 5px;
+	font-size: 14px;
+	font-family: "SF Compact Display Bold";
+}
+
+@font-face {
+	font-family: 'Material Icons';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://example.com/MaterialIcons-Regular.eot);
+	/* For IE6-8 */
+	src: local('Material Icons'),
+		local('MaterialIcons-Regular'),
+		url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+		url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+		url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.btn-off-tab {
+	background-color: transparent;
+	color: #ffffff;
+	font-size: 14px;
+	padding: 10px 35px;
+	border: none;
+}
+
+.card-paket {
+	display: grid;
+	grid-template-columns: 0.5fr 0.5fr 0.5fr;
+	column-gap: 40px;
+	margin: 42px 102px;
+}
+
+.card-price {
+	border: 2px solid #326650;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	align-items: center;
+	padding: 16px;
+}
+
+.desc-price h3 {
+	font-size: 24px;
+	color: #3c3b3b;
+	font-weight: 400;
+}
+
+.garis-bawah {
+	width: 230px;
+	height: 2px;
+	background: #CACACA;
+
+}
+
+.desc-price h1 {
+	font-size: 40px;
+	font-family: "SF Compact Display Bold";
+	color: #000000;
+	margin-bottom: 16px;
+
+}
+
+.desc-facilities {
+	display: flex;
+	align-items: center;
+	margin: 14px 0;
+	font-size: 15px;
+}
+
+.desc-facilities img {
+	margin-right: 14px;
+}
+
+button.booking-btn {
+	padding: 10px 90px;
+	border: 2px solid #326650;
+	border-radius: 5px;
+	background-color: transparent;
+}
+
+.btn-book {
+	margin-top: 71px;
+}
+
+.bg-green {
+	background-color: #326650;
+	color: #ffffff;
+}
+
+.bg-green button.booking-btn {
+	background: #FFFFFF;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+	border-radius: 5px;
+}
+
+.garis-panjang {
+	width: 1160px;
+	height: 3px;
+	background: #E8E8E8;
+
+}
+
+.text-heading-ulasan {
+	text-align: center;
+}
+
+.text-heading-ulasan h2 {
+	font-size: 32px;
+	margin: 16px 0;
+
+}
+
+.text-heading-ulasan p {
+	font-size: 16px;
+	width: 504px;
+	line-height: 150%;
+	margin: 0 auto 47;
+	color: #676767;
+
+}
+
+.row-testimoni {
+	margin: 0 96px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 67px;
+}
+
+.card-testi {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.card-testi p {
+	font-size: 14px;
+	line-height: 21px;
+	color: #3c3b3b;
+	margin-bottom: 8px;
+}
+
+.card-testi img {
+	margin-right: 8px;
+}
+
+.profile-ulasan {
+	display: flex;
+	align-items: center;
+	margin: 16px 0 32px 0;
+}
+
+.profile-ulasan .pic {
+	margin-right: 16px;
+}
+
+footer {
+	background-color: #326650;
+	height: 181px;
+	color: #FFFFFF;
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 101px;
+	width: 100%;
+	margin: 0 auto;
+
+}
+
+.jadwal h3 {
+	margin-bottom: 16px;
+}
+
+.jadwal p {
+	margin: 8px 0;
+
+
+}
+
+.jadwal p span {
+	margin-left: 8px;
+}
+
+.days {
+	display: flex;
+}
+
+.hari {
+	margin-right: 25px;
+}
+
+.hari p {
+	font-family: "SF Compact Display Bold";
+}
+
+.waktu {
+	margin-right: 25px;
+}
+
+.contact {
+	display: flex;
+	margin: 16px 0;
+}
+
+.contact img {
+	margin-right: 16px;
+}
